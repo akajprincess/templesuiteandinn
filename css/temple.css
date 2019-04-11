@@ -1,0 +1,241 @@
+header,footer,main, body{
+  background: #9aaaa7
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  grid-column-gap: 10px;
+  background-color: #9aaaa7
+
+} 
+.left,
+.middle,
+.right {
+  padding: 10px;
+}
+.left {
+  grid-area: left;
+}
+.middle {
+  grid-area: middle;
+}
+.right {
+  grid-area: right;
+}
+
+
+.header {
+    grid-area: header;
+    background-color: #4b4a67;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #7e8987
+  }
+  .header img {
+    float: left;
+    width: 25%;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #7e8987
+  }
+  .header h1,h2,h3,h4,h5,h6, p {
+    color: #ddd1c7
+  }
+
+  nav {
+    grid-area: bottom header;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #8db580;
+    border-width: 2.5px;
+    border-color: #7e8987
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ddd1c7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover .dropdown:hover .dropbtn .dropdown-content a:hover{
+    background-color: #c2cfb2;
+    color: black;
+    display: block;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    color: #ddd1c7
+  }
+  
+  p{
+    color: #ced4c7
+  }
+  
+
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color:#7e8987
+  }
+  
+  input[type=submit] {
+    background-color: #8db580;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #8db580;
+  }
+  
+  .container {
+    background-color: #c2cfb2;
+    padding: 20px;
+  }
+  .container h1,h2{
+    color:#4b4a67;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+  .footer {
+    grid-area: footer;
+    background-color: #4b4a67;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #7e8987
+  }
+  .footer a {
+    color:#ddd1c7;
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+    .column {
+      width: 100%;
+    }
+    .row {
+      flex-direction: column;
+    }
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .column {
+      width: 50%;
+    }
+  }
