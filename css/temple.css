@@ -93,7 +93,9 @@ header,footer,main, body{
   display: block;
   }
 
-
+  h1{
+  text-align: center;
+  }
   h1,h2,h3,h4,h5,h6 {
   color: #ddd1c7
   }
@@ -187,38 +189,52 @@ header,footer,main, body{
 
 
   .filterResult-1Hx44 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -ms-flex-line-pack: start;
-    align-content: flex-start;
-    padding: 8px;
-    padding: .5rem;
-    border-bottom: 1px solid #ddd;
-    font-size: 14px;
-    font-size: .875rem;
-}
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  padding: 8px;
+  padding: .5rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  font-size: .875rem;
+  }
 
-.templeLocation-27z9P {
+  .templeLocation-27z9P {
   width: 45%;
   text-align: left;
   padding: 0 8px;
   padding: 0 .5rem;
-}
+  }
 
-.dedicated-2xVdg {
+  .dedicated-2xVdg {
   width: 20%;
-}
+  }
 
-.templeName-2MBmf {
+  .templeName-2MBmf {
   width: 35%;
-}
+  }
+
+  .homepage {
+  font-size: 18px;
+  position:relative;
+  width:60%;
+
+  }
+
+  div.gallery img {
+  width: 25%;
+  height: auto;
+  margin: 5px;
+  }
+
 
   @media screen and (max-width: 600px) {
   .topnav a {
