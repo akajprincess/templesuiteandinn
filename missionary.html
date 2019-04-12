@@ -7,7 +7,8 @@
     <meta name="description" content="Temple Inn and Suites Accommodations and Services">
     <meta name="author" content="Amber Thomsen">
     <meta name="theme-color" content="#7e8987" />
-    <meta name="keywords" content="Temple, Hotel, Services, Missionary, Latter Day Saints, Worship, Christ, House of the Lord">
+    <meta name="keywords"
+        content="Temple, Hotel, Services, Missionary, Latter Day Saints, Worship, Christ, House of the Lord">
     <link href="css/temple.css" type="text/css" rel="stylesheet" />
 
 
@@ -23,26 +24,37 @@
         <div>
             <h1>Temple Inn & Suites</h1>
             <div>
-               <p>See the Temple, Feel the Spirit.</p>
+                <p>See the Temple, Feel the Spirit.</p>
             </div>
         </div>
     </header>
     <nav>
-        <ul class="topnav">
-            <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="temples.html">Temples</a></li>
-            <li><a href="saltlaketemple.html">Salt Lake Temple</a></li>
-            <li><a href="oquirrhmountaintemple.html">Oquirrh Mountain Temple</a></li>
-            <li><a href="monticellotemple.html">Monticello Temple</a></li>
-            <li><a href="losangelestemple.html">Los Angeles Temple</a></li>
-            <li><a href="orlandofloridatemple.html">Orlando Florida Temple</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="reception.html">Reception</a></li>
-            <li class="active"><a href="missionary.html">Full-Time Temple Missionary</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-        </ul>
+        <div class="navbar">
+            <a class="link" href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a class="benice" href="temples.html">Temples</a> <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="saltlaketemple.html">Salt Lake Temple</a>
+                    <a href="oquirrhmountaintemple.html">Oquirrh Mountain Temple</a>
+                    <a href="monticellotemple.html">Monticello Temple</a>
+                    <a href="losangelestemple.html">Los Angeles Temple</a>
+                    <a href="orlandofloridatemple.html">Orlando Florida Temple</a>
+                </div>
+            </div>
+            <a class="link" href="reservations.html">Reservations</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a class="benice" href="services.html">Services</a><i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="contactus.html">Contact Us</a>
+                    <a href="reception.html">Reception</a>
+                    <a href="missionary.html">Full-Time Missionaries</a>
+                </div>
+            </div>
+        </div>
     </nav>
     <main>
         <h1>Home Page</h1>
@@ -51,12 +63,13 @@
 
     </main>
 
-    <footer>
-        <p>
-            &copy;2019 | Amber Katheryn Anne Thomsen | Utah | <a href="ChurchofJesusChrist.org" target="_blank">Church of Jesus Christ of Latter Day Saints</a>| <a href="http://www.byui.edu/online/" target="_blank">BYU-I Online</a>| <a href="http://www.jamberlouthomsen.com" target="_blank">Jamber Lou's Photography</a>
-            <span id="currentDate"></span>
-        </p>
-    </footer>
+    <footer class="footer">
+            <p>
+                &copy;2019 | Amber Katheryn Anne Thomsen | Utah | <a href="ChurchofJesusChrist.org" target="_blank">Church
+                    of Jesus Christ of Latter Day Saints</a>| <a href="http://www.byui.edu/online/" target="_blank">BYU-I
+                    Online</a>| <a href="http://www.jamberlouthomsen.com" target="_blank">Jamber Lou's Photography</a>
+            </p>
+        </footer>
 </body>
 
 </html>

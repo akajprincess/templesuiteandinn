@@ -28,53 +28,58 @@
             </div>
         </div>
     </header>
-    <nav>
-        <ul class="topnav">
-            <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="temples.html">Temples</a></li>
-            <li><a href="saltlaketemple.html">Salt Lake Temple</a></li>
-            <li><a href="oquirrhmountaintemple.html">Oquirrh Mountain Temple</a></li>
-            <li><a href="monticellotemple.html">Monticello Temple</a></li>
-            <li><a href="losangelestemple.html">Los Angeles Temple</a></li>
-            <li><a href="orlandofloridatemple.html">Orlando Florida Temple</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="reception.html">Reception</a></li>
-            <li><a href="missionary.html">Full-Time Temple Missionary</a></li>
-            <li class="active"><a href="contactus.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    <div class="navbar">
+        <a class="link" href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="benice" href="temples.html">Temples</a> <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="saltlaketemple.html">Salt Lake Temple</a>
+                <a href="oquirrhmountaintemple.html">Oquirrh Mountain Temple</a>
+                <a href="monticellotemple.html">Monticello Temple</a>
+                <a href="losangelestemple.html">Los Angeles Temple</a>
+                <a href="orlandofloridatemple.html">Orlando Florida Temple</a>
+            </div>
+        </div>
+        <a class="link" href="reservations.html">Reservations</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="benice" href="services.html">Services</a><i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="contactus.html">Contact Us</a>
+                <a href="reception.html">Reception</a>
+                <a href="missionary.html">Full-Time Missionaries</a>
+            </div>
+        </div>
+    </div>
     <main>
         <section>
-            <div class="container">
-                    <div style="text-align:center">
-                            <h1>Contact Us</h1>
-                          </div>
-                          <div class="row">
-                            <div class="column">
-                                    <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701322!2d-77.09772048468812!3d38.98325177955756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554867145073!5m2!1sen!2sus"
-                                    width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-                            </div>
-                <form action="action_page.php" class="column">
-                        <h2> Leave us a message:</h2>
-                    <div class="row">
-                        <div class="col-25">
-                            <p><label for="fname">First Name:</label></p>
-                        </div>
-                        <div class="col-75">
-                            <input type="text" id="fname" name="firstname" pattern="[A-Za-z\s]{2,}"
-                                placeholder="Your name.." required>
-                        </div>
+                <div style="text-align:center">
+                        <h1>Contact Us</h1>
                     </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <p><label for="lname">Last Name:</label></p>
+            <div class="container">
+                <div class="row">
+                    <form action="action_page.php" class="column">
+                        <h2> Leave us a message:</h2>
+                        <div class="row">
+                            <div class="col-25">
+                                <p><label for="fname">First Name:</label></p>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="firstname" pattern="[A-Za-z\s]{2,}"
+                                    placeholder="Your name.." required>
+                            </div>
                         </div>
-                        <div class="col-75">
-                            <input type="text" id="lname" name="lastname" pattern="[A-Za-z\s]{2,}"
-                                placeholder="Your last name.." required>
+                        <div class="row">
+                            <div class="col-25">
+                                <p><label for="lname">Last Name:</label></p>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" pattern="[A-Za-z\s]{2,}"
+                                    placeholder="Your last name.." required>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-25">
@@ -88,41 +93,46 @@
                         <div class="row">
                             <div class="col-25">
                                 <p><label for="email"> Email:</label></p>
-                                <div class="col-75"><input type="email" placeholder="usersemail@email.org" required>
-                                </div>
+                            </div>
+                            <div class="col-75">
+                                <input type="email" placeholder="usersemail@email.org" required>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <p><label for="country">Country:</label></p>
+                        <div class="row">
+                            <div class="col-25">
+                                <p><label for="country">Country:</label></p>
+                            </div>
+                            <div class="col-75">
+                                <select id="country" name="country">
+                                    <option value="usa">USA</option>
+                                    <option value="australia">Australia</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="africa">Africa</option>
+                                    <option value="europe">Europe</option>
+                                    <option value="usa">USA</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-75">
-                            <select id="country" name="country">
-                                <option value="usa">USA</option>
-                                <option value="australia">Australia</option>
-                                <option value="canada">Canada</option>
-                                <option value="africa">Africa</option>
-                                <option value="europe">Europe</option>
-                                <option value="usa">USA</option>
-                                <option value="other">Other</option>
-                            </select>
+                        <div class="row">
+                            <div class="col-25">
+                                <p><label for="subject">Subject:</label></p>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder="Write something.."
+                                    style="height:200px" required></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <p><label for="subject">Subject:</label></p>
+                        <div class="row">
+                            <input type="submit" value="Submit">
                         </div>
-                        <div class="col-75">
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
-                                required></textarea>
+                    </form>
+                    <div class="column">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701322!2d-77.09772048468812!3d38.98325177955756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554867145073!5m2!1sen!2sus"
+                                width="190%" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
-                    </div>
-                    <div class="row">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </div>
+                </div>
 
         </section>
 
@@ -130,15 +140,12 @@
 
 
     <footer class="footer">
-        <p>
-            &copy;2019 | Amber Katheryn Anne Thomsen | Utah | <a href="ChurchofJesusChrist.org" target="_blank">Church
-                of Jesus Christ of Latter Day Saints</a>| <a href="http://www.byui.edu/online/" target="_blank">BYU-I
-                Online</a>| <a href="http://www.jamberlouthomsen.com" target="_blank">Jamber Lou's Photography</a>
-            <span id="currentDate"></span>
-        </p>
-        <script src="scripts/currentdate.js" defer></script>
-        <script src="scripts/hamburger.js" defer></script>
-    </footer>
+            <p>
+                &copy;2019 | Amber Katheryn Anne Thomsen | Utah | <a href="ChurchofJesusChrist.org" target="_blank">Church
+                    of Jesus Christ of Latter Day Saints</a>| <a href="http://www.byui.edu/online/" target="_blank">BYU-I
+                    Online</a>| <a href="http://www.jamberlouthomsen.com" target="_blank">Jamber Lou's Photography</a>
+            </p>
+        </footer>
 </body>
 
 </html>
