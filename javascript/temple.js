@@ -28,7 +28,7 @@ templeInfoRequest.onload = function() {
 }
 
 function setTempleInfo(templeInfo) {
-    let address = templeInfo.Address
+    let address = templeInfo.address
     document.getElementById("addressLine").innerHTML = address.line;
     document.getElementById("cityState").innerHTML = address.city + " " + address.state + " " + address.zip
     document.getElementById("country").innerHTML = address.country
