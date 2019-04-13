@@ -95,6 +95,6 @@ function setWeatherData(weatherData) {
     // let desc = weatherData.weather[0].description;
 
     document.getElementById("weather-icon").setAttribute('src', icon);
-    document.getElementById("weather-icon").setAttribute("alt", desc);
+    // document.getElementById("weather-icon").setAttribute("alt", desc);
     document.getElementById("weather").innerHTML = weatherData.weather[0].main;
 }
