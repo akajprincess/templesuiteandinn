@@ -346,7 +346,7 @@ header,footer,main, body, nav{
   border-width: 5px;
   border-color: #7e8987;
   background: #c2cfb2;
-  padding-box: 10px;
+  image-resolution: 50%;
   }
 
   .footer {
