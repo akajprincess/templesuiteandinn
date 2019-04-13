@@ -7,68 +7,105 @@
     <meta name="description" content="Temple Inn and Suites Accommodations and Services">
     <meta name="author" content="Amber Thomsen">
     <meta name="theme-color" content="#7e8987" />
-    <meta name="keywords"
-        content="Temple, Hotel, Services, Missionary, Latter Day Saints, Worship, Christ, House of the Lord">
-        <link href="css/temple.css" type="text/css" rel="stylesheet" />
-        <link href="css/normalize.css" type="text/css" rel="stylesheet" />
-    
+    <meta name="keywords" content="Temple, Hotel, Services, Missionary, Latter Day Saints, Worship, Christ, House of the Lord">
+    <link href="css/temple.css" type="text/css" rel="stylesheet" />
+    <!-- <link href="css/normalize.css" type="text/css" rel="stylesheet" /> -->
 
-    <title>Home Page</title>
+    <title>Oquirrh Mountain Temple</title>
 </head>
 
 
 <body>
-    <header class="header">
-        <div>
-            <img src="images/templesquare.jpg" alt="Temple Square">
-        </div>
-        <div>
-            <h1>Temple Inn & Suites</h1>
-            <div>
-                <p>See the Temple, Feel the Spirit.</p>
-            </div>
-        </div>
-    </header>
+        <header class="header">
+                <div>
+                    <img src="images/templesquare.jpg" alt="Temple Square">
+                </div>
+                <div>
+                    <h1>Temple Inn & Suites</h1>
+                    <div>
+                        <p>See the Temple, Feel the Spirit.</p>
+                    </div>
+                </div>
+            </header>
+        
     <div class="navbar">
-        <a class="link" href="index.html">Home</a>
-        <div class="dropdown">
-            <button class="dropbtn">
-                <a class="benice" href="temples.html">Temples</a> <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="saltlaketemple.html">Salt Lake Temple</a>
-                <a href="oquirrhmountaintemple.html">Oquirrh Mountain Temple</a>
-                <a href="monticellotemple.html">Monticello Temple</a>
-                <a href="losangelestemple.html">Los Angeles Temple</a>
-                <a href="orlandofloridatemple.html">Orlando Florida Temple</a>
+            <a class="link" href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a class="benice" href="temples.html">Temples</a> <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="saltlaketemple.html">Salt Lake Temple</a>
+                    <a href="oquirrhmountaintemple.html">Oquirrh Mountain Temple</a>
+                    <a href="monticellotemple.html">Monticello Temple</a>
+                    <a href="losangelestemple.html">Los Angeles Temple</a>
+                    <a href="orlandofloridatemple.html">Orlando Florida Temple</a>
+                </div>
+            </div>
+            <a class="link" href="reservations.html">Reservations</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a class="benice" href="services.html">Services</a><i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="contactus.html">Contact Us</a>
+                    <a href="reception.html">Reception</a>
+                    <a href="missionary.html">Full-Time Missionaries</a>
+                </div>
             </div>
         </div>
-        <a class="link" href="reservations.html">Reservations</a>
-        <div class="dropdown">
-            <button class="dropbtn">
-                <a class="benice" href="services.html">Services</a><i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="contactus.html">Contact Us</a>
-                <a href="reception.html">Reception</a>
-                <a href="missionary.html">Full-Time Missionaries</a>
-            </div>
-        </div>
-    </div>
     <main>
-        <h1>Home Page</h1>
-        <section>
+            <h1>Oquirrh Mountain Temple</h1>
+            <img src="images/oquirrhmountaintemple.jpg" alt="oquirrhmountaintemple" width="100%">
+            <section class="column">
+            <div class="weathersummary">
+                <div>
+                    <h2>Weather Summary</h2>
+                    <p>Currently: </p>
+                    <p>
+                        <div id="weather"></div><span><img id="weather-icon" src="" alt="" /></span>
+                    </p>
+                    <p>Temperature: </p>
+                    <p><span id="current-temp"></span>&deg; F</p>
+                </div>
+            </div>
         </section>
-
-    </main>
+            <section class="column">
+                <h2>Address:</h2>
+                <p id="addressLine"></p>
+                <p id="cityState"></p>
+                <p id="country"></p>
+                <h2>Telephone:</h2>
+                <p id="phone"></p>
+                <h2>Services:</h2>
+                <div id="services"></div>
+                <h2>History:</h2>
+                <div id="history"></div>
+            </section>
+            <section>
+                <h2>Temple Closures</h2>
+                <div id="closures"></div>
+            </section>
+            <section>
+                <h2>Ordinance Schedule</h2>
+                <div id="ordinance"></div>
+            </section>
+            <section>
+                <h2>Session Schedule</h2>
+                <div id="session"></div>
+            </section>
+            <br><br><br><br><br>
+    
+        </main>
 
     <footer class="footer">
-        <p>
-            &copy;2019 | Amber Katheryn Anne Thomsen | Utah | <a href="ChurchofJesusChrist.org" target="_blank">Church
-                of Jesus Christ of Latter Day Saints</a>| <a href="http://www.byui.edu/online/" target="_blank">BYU-I
-                Online</a>| <a href="http://www.jamberlouthomsen.com" target="_blank">Jamber Lou's Photography</a>
-        </p>
-    </footer>
+            <p>
+                &copy;2019 | Amber Katheryn Anne Thomsen | Utah | <a href="ChurchofJesusChrist.org" target="_blank">Church
+                    of Jesus Christ of Latter Day Saints</a>| <a href="http://www.byui.edu/online/" target="_blank">BYU-I
+                    Online</a>| <a href="http://www.jamberlouthomsen.com" target="_blank">Jamber Lou's Photography</a>
+            </p>
+        </footer>
+        <script src="javascript/temple.js" defer></script>
 </body>
 
 </html>

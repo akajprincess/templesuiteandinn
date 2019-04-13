@@ -6,13 +6,13 @@ if("Salt Lake Temple" === temple) {
     weatherCode = 5604473;
     jsonURLString = "https://akajprincess.github.io/templesuiteandinn.github.io/json/saltlaketemple.json";
 } else if ("Oquirrh Mountain Temple" === temple) {
-    weatherCode = 5678757;
+    weatherCode = 5781770;
     jsonURLString = "https://akajprincess.github.io/templesuiteandinn.github.io/json/oquirrhmountaintemple.json";
 } else if ("Monticello Temple" === temple) {
-    weatherCode = 5678757;
+    weatherCode = 4867801;
     jsonURLString = "https://akajprincess.github.io/templesuiteandinn.github.io/json/monticellotemple.json";
 } else if ("Los Angeles Temple" === temple) {
-    weatherCode = 5678757;
+    weatherCode = 3882428;
     jsonURLString = "https://akajprincess.github.io/templesuiteandinn.github.io/json/losangelestemple.json";
 } else {
     weatherCode = 5585010;
@@ -75,28 +75,26 @@ function setTempleInfo(templeInfo) {
     }
 }
 
-// let weatherRequest = new XMLHttpRequest();
-// let apiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=" + weatherCode + "&units=imperial&APPID=ce65a8d7c7b2b3226cf302518813322f"
-// weatherRequest.open('Get', apiURLstring, true);
-// weatherRequest.send();
+let weatherRequest = new XMLHttpRequest();
+let apiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=" + weatherCode + "&units=imperial&APPID=ce65a8d7c7b2b3226cf302518813322f"
+weatherRequest.open('Get', apiURLstring, true);
+weatherRequest.send();
 
-// weatherRequest.onload =  function () {
-//     let weatherData = JSON.parse(weatherRequest.responseText);
-//     console.log(weatherData);
-//     setWeatherData(town, weatherData);
-// }
+weatherRequest.onload =  function () {
+    let weatherData = JSON.parse(weatherRequest.responseText);
+    console.log(weatherData);
+    setWeatherData(weatherData);
+}
 
-// function setWeatherData(town, weatherData) {
-//     let currentTemp = weatherData.main.temp;
+function setWeatherData(weatherData) {
+    let currentTemp = weatherData.main.temp;
 
-//     document.getElementById("current-temp").innerHTML = currentTemp.toFixed(2);
+    document.getElementById("current-temp").innerHTML = currentTemp.toFixed(2);
 
-//     let icon = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
-//     let desc = weatherData.weather[0].description;
-//     let windspeed = weatherData.wind.speed;
+    let icon = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
+    // let desc = weatherData.weather[0].description;
 
-//     document.getElementById("weather-icon").setAttribute('src', icon);
-//     document.getElementById("weather-icon").setAttribute("alt", desc);
-//     document.getElementById("weather").innerHTML = weatherData.weather[0].main;
-//     document.getElementById("windspeed").innerHTML = windspeed.toFixed(2);
-// }
+    document.getElementById("weather-icon").setAttribute('src', icon);
+    document.getElementById("weather-icon").setAttribute("alt", desc);
+    document.getElementById("weather").innerHTML = weatherData.weather[0].main;
+}

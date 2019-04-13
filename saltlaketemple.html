@@ -9,9 +9,9 @@
     <meta name="theme-color" content="#7e8987" />
     <meta name="keywords"
         content="Temple, Hotel, Services, Missionary, Latter Day Saints, Worship, Christ, House of the Lord">
-        <link href="css/temple.css" type="text/css" rel="stylesheet" />
-        <link href="css/normalize.css" type="text/css" rel="stylesheet" />
-    
+    <link href="css/temple.css" type="text/css" rel="stylesheet" />
+    <!-- <link href="css/normalize.css" type="text/css" rel="stylesheet" /> -->
+
 
     <title>Salt Lake Temple</title>
 </head>
@@ -56,12 +56,25 @@
     </div>
     <main>
         <h1>Salt Lake Temple</h1>
-        <img src="images/slt.jpg" alt="salt lake temple" class="col-25" >
-        <section>
+        <img src="images/slt.jpg" alt="salt lake temple">
+        <section class="column">
+        <div class="weathersummary">
+            <div>
+                <h2>Weather Summary</h2>
+                <p>Currently: </p>
+                <p>
+                    <div id="weather"></div><span><img id="weather-icon" src="" alt="" /></span>
+                </p>
+                <p>Temperature: </p>
+                <p><span id="current-temp"></span>&deg; F</p>
+            </div>
+        </div>
+    </section>
+        <section class="column">
             <h2>Address:</h2>
             <p id="addressLine"></p>
-               <p id="cityState"></p>
-               <p id="country"></p>
+            <p id="cityState"></p>
+            <p id="country"></p>
             <h2>Telephone:</h2>
             <p id="phone"></p>
             <h2>Services:</h2>
@@ -70,8 +83,8 @@
             <div id="history"></div>
         </section>
         <section>
-               <h2>Temple Closures</h2>
-               <div id="closures"></div>
+            <h2>Temple Closures</h2>
+            <div id="closures"></div>
         </section>
         <section>
             <h2>Ordinance Schedule</h2>
@@ -81,6 +94,7 @@
             <h2>Session Schedule</h2>
             <div id="session"></div>
         </section>
+        <br><br><br>
 
     </main>
 
@@ -91,7 +105,7 @@
                 Online</a>| <a href="http://www.jamberlouthomsen.com" target="_blank">Jamber Lou's Photography</a>
         </p>
     </footer>
-    
+
     <script src="javascript/temple.js" defer></script>
 </body>
 
