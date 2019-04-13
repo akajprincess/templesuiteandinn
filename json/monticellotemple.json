@@ -1,22 +1,23 @@
 {
     "address":{
-        "line":"50 W North Temple St",
-        "city":"Salt Lake City",
+        "line":"365 N 200 W",
+        "city":"Monticello",
         "state": "UT",
-        "zip": "84150-9709",
+        "zip": "84535",
         "country":"United States"
     },
-    "telephone":"801-240-2640",
+    "telephone":"435-587-3500",
     "services":[
-        "Clothing rental available",
-        "Cafeteria available",
+        "No Clothing rental available",
+        "No Cafeteria available",
         "No patron housing available",
-        "Distribution center nearby"
+        "No Distribution center nearby"
     ],
     "history":[
-        "28 July 1847--Announced",
-        "14 February 1853--Groundbreaking",
-        "6 April 1893-- Dedicated — dedicatory prayer"
+        "4 October 1997--Announced",
+        "17 November 1997--Groundbreaking",
+        "26 July 1998-- Dedicated — dedicatory prayer"
+        "17 November 2002-- Rededicated — dedicatory prayer"
     ],
     "closures":[
         "Tuesday, 2 July 2019 - Monday, 15 July 2019",
@@ -30,19 +31,19 @@
     "ordinanceSchedule":[
         "Sunday:    closed",
         "Monday:    closed",
-        "Tuesday:   5am-8pm",
-        "Wednesday: 5am-8pm",
-        "Thursday:  5am-8pm",
-        "Friday:    5am-8pm",
-        "Saturday:  5am-9pm"
+        "Tuesday:   10am-1:30pm, 5:30am-8pm Appointments only",
+        "Wednesday: 10am-1:30pm, 5:30am-8pm Appointments only",
+        "Thursday:  10am-1:30pm, 5:30am-8pm Appointments only",
+        "Friday:    10am-1:30pm, 5:30am-8pm Appointments only",
+        "Saturday:  8:30am-10am, 10am -12pm, 1pm-2pm, 3pm-5pm Appointments only"
     ],
     "sessionSchedule":[
         "Sunday:    closed",
         "Monday:    closed",
-        "Tuesday:   6am-7pm Sessions start every hour on the hour",
-        "Wednesday: 6am-7pm Sessions start every hour on the hour",
-        "Thursday:  6am-7pm Sessions start every hour on the hour",
-        "Friday:    6am-7pm Sessions start every hour on the hour",
-        "Saturday:  5am-8pm Sessions start every hour on the hour"
+        "Tuesday:   10 am, 12pm, 5pm, 7pm",
+        "Wednesday: 10 am, 12pm, 5pm, 7pm",
+        "Thursday: 10 am, 12pm, 5pm, 7pm",
+        "Friday:   10 am, 12pm, 5pm, 7pm",
+        "Saturday:  8am, 10 am, 1pm, 3pm"
     ]
 }

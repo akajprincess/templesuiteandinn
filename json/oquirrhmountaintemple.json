@@ -1,31 +1,32 @@
 {
     "address":{
-        "line":"50 W North Temple St",
-        "city":"Salt Lake City",
+        "line":"11022 S 4000 W",
+        "city":"South Jordan",
         "state": "UT",
-        "zip": "84150-9709",
+        "zip": "84009-5797",
         "country":"United States"
     },
-    "telephone":"801-240-2640",
+    "telephone":" 801-878-3800",
     "services":[
-        "Clothing rental available",
-        "Cafeteria available",
+        "No Clothing rental available",
+        "No Cafeteria available",
         "No patron housing available",
         "Distribution center nearby"
     ],
     "history":[
-        "28 July 1847--Announced",
-        "14 February 1853--Groundbreaking",
-        "6 April 1893-- Dedicated — dedicatory prayer"
+        "1 October 2005--Announced",
+        "16 December 2006--Groundbreaking",
+        "21 August 2009-- Dedicated — dedicatory prayer"
     ],
     "closures":[
-        "Tuesday, 2 July 2019 - Monday, 15 July 2019",
+        "Thursday, 4 July 2019",
         "Wednesday, 24 July 2019",
+        "Monday, 9 September 2019 - Monday, 23 September 2019",
         "Saturday, 5 October 2019",
         "Wednesday, 27 November 2019 (Limited Hours)",
-        "Thursday, 28 November 2019 - Friday, 29 November 2019",
+        "Thursday, 28 November 2019",
         "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
-        "Tuesday, 31 December 2019"
+        "Tuesday, 31 December 2019- Wednesday, 1 January 2020"
     ],
     "ordinanceSchedule":[
         "Sunday:    closed",
@@ -39,10 +40,10 @@
     "sessionSchedule":[
         "Sunday:    closed",
         "Monday:    closed",
-        "Tuesday:   6am-7pm Sessions start every hour on the hour",
-        "Wednesday: 6am-7pm Sessions start every hour on the hour",
-        "Thursday:  6am-7pm Sessions start every hour on the hour",
-        "Friday:    6am-7pm Sessions start every hour on the hour",
+        "Tuesday:   7am-8pm Sessions start every hour on the hour",
+        "Wednesday: 7am-8pm Sessions start every hour on the hour",
+        "Thursday:  7am-8pm Sessions start every hour on the hour",
+        "Friday:    7am-8pm Sessions start every hour on the hour",
         "Saturday:  5am-8pm Sessions start every hour on the hour"
     ]
 }

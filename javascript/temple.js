@@ -16,7 +16,7 @@ if("Salt Lake Temple" === temple) {
     jsonURLString = "https://akajprincess.github.io/templesuiteandinn.github.io/json/losangelestemple.json";
 } else {
     weatherCode = 5585010;
-    jsonURLString = "https://akajprincess.github.io/templesuiteandinn.github.io/json/orlandofloridatemple.json";
+    jsonURLString = "https://akajprincess.github.io/templesuiteandinn.github.io/json/orlandotemple.json";
 }
 let templeInfoRequest = new XMLHttpRequest();
 templeInfoRequest.open('Get', jsonURLString, true);
