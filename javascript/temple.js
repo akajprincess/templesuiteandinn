@@ -80,23 +80,23 @@ function setTempleInfo(templeInfo) {
 // weatherRequest.open('Get', apiURLstring, true);
 // weatherRequest.send();
 
-weatherRequest.onload =  function () {
-    let weatherData = JSON.parse(weatherRequest.responseText);
-    console.log(weatherData);
-    setWeatherData(town, weatherData);
-}
+// weatherRequest.onload =  function () {
+//     let weatherData = JSON.parse(weatherRequest.responseText);
+//     console.log(weatherData);
+//     setWeatherData(town, weatherData);
+// }
 
-function setWeatherData(town, weatherData) {
-    let currentTemp = weatherData.main.temp;
+// function setWeatherData(town, weatherData) {
+//     let currentTemp = weatherData.main.temp;
 
-    document.getElementById("current-temp").innerHTML = currentTemp.toFixed(2);
+//     document.getElementById("current-temp").innerHTML = currentTemp.toFixed(2);
 
-    let icon = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
-    let desc = weatherData.weather[0].description;
-    let windspeed = weatherData.wind.speed;
+//     let icon = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
+//     let desc = weatherData.weather[0].description;
+//     let windspeed = weatherData.wind.speed;
 
-    document.getElementById("weather-icon").setAttribute('src', icon);
-    document.getElementById("weather-icon").setAttribute("alt", desc);
-    document.getElementById("weather").innerHTML = weatherData.weather[0].main;
-    document.getElementById("windspeed").innerHTML = windspeed.toFixed(2);
-}
+//     document.getElementById("weather-icon").setAttribute('src', icon);
+//     document.getElementById("weather-icon").setAttribute("alt", desc);
+//     document.getElementById("weather").innerHTML = weatherData.weather[0].main;
+//     document.getElementById("windspeed").innerHTML = windspeed.toFixed(2);
+// }
