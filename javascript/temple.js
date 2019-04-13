@@ -92,9 +92,9 @@ function setWeatherData(weatherData) {
     document.getElementById("current-temp").innerHTML = currentTemp.toFixed(2);
 
     let icon = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
-    // let desc = weatherData.weather[0].description;
+    let desc = weatherData.weather[0].description;
 
     document.getElementById("weather-icon").setAttribute('src', icon);
-    // document.getElementById("weather-icon").setAttribute("alt", desc);
-    document.getElementById("weather").innerHTML = weatherData.weather[0].main;
+    document.getElementById("weather-icon").setAttribute("alt", desc);
+    // document.getElementById("weather").innerHTML = weatherData.weather[0].main;
 }
